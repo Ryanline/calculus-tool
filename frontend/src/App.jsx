@@ -314,11 +314,11 @@ export default function App() {
   const cards = useMemo(
     () => [
       {
-        key: "integral",
-        label: "integral",
-        expression: formatMathExpression(result.integral),
+        key: "derivative",
+        label: "derivative",
+        expression: formatMathExpression(result.derivative),
         color: "var(--blue)",
-        points: result.graphs?.integral || [],
+        points: result.graphs?.derivative || [],
       },
       {
         key: "expression",
@@ -328,11 +328,11 @@ export default function App() {
         points: result.graphs?.expression || [],
       },
       {
-        key: "derivative",
-        label: "derivative",
-        expression: formatMathExpression(result.derivative),
+        key: "integral",
+        label: "integral",
+        expression: formatMathExpression(result.integral),
         color: "var(--coral)",
-        points: result.graphs?.derivative || [],
+        points: result.graphs?.integral || [],
       },
     ],
     [result],

@@ -52,5 +52,7 @@ npm run dev:frontend
 - React handles the page and graphs.
 - The Node backend receives the function input.
 - The backend sends the function to MATLAB.
-- MATLAB computes the derivative, integral, and graph points.
+- MATLAB converts the text input into a symbolic expression using the Symbolic Math Toolbox.
+- MATLAB uses that symbolic expression to compute the derivative and integral.
+- MATLAB evaluates those expressions across a range of x-values to generate graph points.
 - The frontend displays the results in the browser.
